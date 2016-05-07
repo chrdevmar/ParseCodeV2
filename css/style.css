@@ -1,0 +1,140 @@
+/*font for whole site*/
+#bootstrap-overrides{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	min-width: 550px;
+}
+
+#bootstrap-overrides .jumbotron{
+	margin: 0px;
+	padding: 20px 10% 20px 10%;
+}
+
+/*nav bar*/
+.nav-bar{
+	background-color: rgba(134, 131, 126, 0.9);
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+/*nav bar items*/
+#bootstrap-overrides .nav-bar ul li a{
+	font-size: 20px;
+	color: #2d2d2d;
+	background-color: transparent; 
+}
+
+/*hover effects on nav items*/
+#bootstrap-overrides .nav-bar ul li a:hover{
+	background-color: rgba(127, 80, 39, 0.7);
+}
+
+/*me panel header*/
+.mePanel{
+	padding: 130px 100px 5% 100px;
+	font-size: 30px;
+	text-align: center;
+	background-color: #dbd8ce;
+	/*background-image: url("../media/orange.png");*/
+	background-size: cover;
+	z-index: 1;
+	/*color: #a10909;*/
+	color: #7f5027;
+}
+
+#bootstrap-overrides .meContainer{
+	position: relative;
+	width: 100%;
+	height: 50%;
+}
+
+#bootstrap-overrides .meContainer .meIcons{
+	font-size: 100px;
+}
+
+.name{
+	font-size: 90px;
+	/*color: #a10909;*/
+	color: #7F5027;
+	margin-bottom: 60px;
+}
+
+.skillsPanel{
+	/*background-color: #404040;*/
+	background-color: #2d2d2d;
+	color: #e4dfc2;
+	font-size: 60px;
+	text-align: center;
+	/*padding-bottom: 20px !important;*/
+}
+
+#bootstrap-overrides .skillsPanel{
+	text-align: center;
+}
+
+.language{
+	font-size: 25px;
+	text-align: left;
+}
+
+.subSkill{
+	text-align: left;
+	color: #86837e;
+	padding-top: 20px;
+	font-size: 26px;
+}
+
+.language i{
+	margin: 6px 6px 6px 6px;
+}
+
+.experiencePanel{
+	background-color: #dbd8ce;
+	text-align: center;
+	font-size: 60px;
+	color: #2d2d2d;
+}
+
+.experience{
+	text-align: left;
+	font-size: 30px;
+	margin-top: 80px;
+}
+
+.experienceDetails{
+	font-size: 30px;
+}
+
+.experienceTitle{
+	font-size:40px;
+}
+
+.footer{
+	font-size: 20px;
+	text-align: center;
+	background-color: #86837e;
+	color: #2d2d2d;
+}
+
+@media (max-width: 768px)
+{
+	.subSkill{
+	font-size: 41px;
+	text-align: center !important;
+	}
+
+	.language{
+	font-size: 40px;
+	text-align: center;
+	}
+
+	.mePanel{
+	font-size: 40px;
+	}
+
+	.name{
+	font-size: 80px;
+	}
+}

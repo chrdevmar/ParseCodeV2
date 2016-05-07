@@ -1,0 +1,70 @@
+<div class="jumobotron mePanel container-fluid">
+	<p class="name">CHRISTOPHER MARTIN</p>
+	<div class="meContainer row">
+		<div class="col-md-4"><i class="fa fa-graduation-cap meIcons"></i><br><div>I AM A 2ND YEAR STUDENT</div></div>
+		<div class="col-md-4"><i class="fa fa-home meIcons"></i><br><div>I LIVE IN BRISBANE, QLD</div></div>
+		<div class="col-md-4"><i class="fa fa-code meIcons"></i><br><div>I LIKE TO CODE</div></div>
+	</div>
+</div>
+<div class="jumbotron skillsPanel container-fluid">
+	Skills
+	<div class="row">
+		<div class="subSkill col-md-6">
+				<span class="col-md-6 col-xs-12 subSkill">Languages</span>
+				<span class="col-md-6 col-xs-12 language subSkill"><i class="fa fa-circle" ng-repeat="i in getNumber(6) track by $index"></i></span>
+				<span class="col-md-12">&nbsp;</span>
+			<div ng-repeat="language in languages" style="color: {{language.color}};">
+				<span class="col-md-6 language">{{language.skill}}</span> 
+				<div class="col-md-6 language">
+				<i class="fa fa-circle" ng-repeat="i in getNumber(language.score) track by $index"></i>
+				</div>
+			</div>
+		</div>
+		<div class="subSkill col-md-6">
+				<span class="col-md-6 col-xs-12 subSkill">Frameworks</span>
+				<span class="col-md-6 col-xs-12 language subSkill"><i class="fa fa-circle" ng-repeat="i in getNumber(6) track by $index"></i></span>
+				<span class="col-md-12">&nbsp;</span>
+			<div class="language" ng-repeat="framework in frameworks" style="color: {{framework.color}};">
+			<span class="col-md-6">{{framework.skill}}</span> <div class="col-md-6"><i class="fa fa-circle" ng-repeat="i in getNumber(framework.score) track by $index"></i></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jumbotron experiencePanel container-fluid">
+	Experience
+	<div class="row experience">
+			<div class="col-md-2 col-xs-6">
+				<img src="media/neotill_transparent.png" alt="" width="80%">
+			</div>
+			<div class="col-md-4 col-xs-6">
+				<span class="experienceTitle">Neotill Pty Ltd</span><br>
+				<span>Mobile and Web App Development</span><br>
+				<span>February 2016 - Present</span><br><br>
+			</div>
+			<div class="col-md-6 experienceDetails">
+				Neotill is a mobile payment processing app for iOS and Android devices. I have been an intern at Neotill for the past few months helping with various features of the app. I have developed skills which allow me to build database driven websites and cross platform, responsive web applications. 
+			</div>
+	</div>
+	<div class="row experience">
+		<div class="col-md-2 col-xs-6">
+			<img src="media/qut.png" alt="QUT" width="80%">
+		</div>
+		<div class="col-md-4 col-xs-6">
+			<span class="experienceTitle">Bachelor of IT</span><br>
+			<span>Computer Science Major</span><br>
+			<span>QUT Gardens Point</span><br>
+			<span>February 2015 - Present</span><br><br>
+
+		</div>
+		<div class="col-md-6 experienceDetails">
+			I am currently in my 5th semester of a bachelor of Information Technology (Majoring in Computer Science). I have learnt a variety of programming languages and concepts. I am experienced in object-oriented programming and love clean, readable code. 
+		</div>
+	</div>
+</div>
+<div class="jumbotron footer container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-xs-4">hey</div>
+		<div class="col-md-4 col-xs-4">wer</div>
+		<div class="col-md-4 col-xs-4">ger</div>
+	</div>
+</div>
