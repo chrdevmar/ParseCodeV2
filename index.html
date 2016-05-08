@@ -30,13 +30,22 @@
 <body id="bootstrap-overrides" ng-controller="homeController"  ng-click="shootBalls()">
 	<div class="jumbotron nav-bar container-fluid">
 			<ul class="nav nav-pills row">
- 				<li><a data-toggle="active" href="#me">ME</a></li>
-				<li><a href="#projects">PROJECTS</a></li>
-				<li><a href="#contact">CONTACT</a></li>
+ 				<li><a data-toggle="active" href="#me"><i class="fa fa-user" aria-hidden="true"></i> ME</a></li>
+				<li><a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"></i> PROJECTS</a></li>
+				<li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i> CONTACT</a></li>
 			</ul>
 	</div>
 	<div id="main">
 		<div ng-view ng-controller="homeController"></div>
 	</div>
+	<div class="jumbotron footer container-fluid">
+	<div class="row">
+		<div class="col-md-3 col-xs-3"></div>
+		<div class="col-md-6 col-xs-6 myName">Christopher Martin 2016</div>
+		<div class="col-md-3 col-xs-3">
+			<a href="https://github.com/wangchonghoe" target=_blank><i class="fa fa-github" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</div>
 </body>
 </html>
