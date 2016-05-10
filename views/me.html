@@ -1,44 +1,54 @@
+<!-- panel about me -->
 <div class="jumobotron mePanel container-fluid">
 	<p class="name">CHRISTOPHER MARTIN</p>
+	<!-- pretty icons about me -->
 	<div class="meContainer row">
 		<div class="col-md-4"><i class="fa fa-home meIcons"></i><br><div>I LIVE IN BRISBANE, QLD</div></div>
 		<div class="col-md-4"><i class="fa fa-code meIcons"></i><br><div>I LIKE TO CODE</div></div>
 		<div class="col-md-4"><i class="fa fa-graduation-cap meIcons"></i><br><div>I AM A 2ND YEAR STUDENT</div></div>
 	</div>
 </div>
+<!-- skills panel -->
 <div class="jumbotron skillsPanel container-fluid">
 	<div id="skillsPanelHeading">Skills</div>
 	<div class="row">
 		<div class="subSkill col-md-6">
-				<span class="col-md-12 col-xs-12 subSkill">Languages</span>
+			<span class="col-md-12 col-xs-12 subSkill">Languages</span>
+			<!-- begin repeat on languages array -->
 			<div ng-repeat="language in languages" style="color: {{language.color}};">
 				<span class="col-md-5 language">{{language.skill}}</span> 
 				<div class="col-md-7 language">
+				<!-- begin skill score repeat, end of line comment fixes unwanted space -->
 				<i class="fa fa-circle" ng-repeat="i in getNumber(language.score) track by $index"></i><!--
 				--><i class="fa fa-circle" ng-repeat="i in getNumber(8 - language.score) track by $index" style="color: #86837E;"></i>
 				</div>
 			</div>
 		</div>
 		<div class="subSkill col-md-6">
-			<span class="col-md-12 col-xs-12 subSkill">Frameworks</span>				
+			<span class="col-md-12 col-xs-12 subSkill">Frameworks</span>
+			<!-- begin repeat on frameworks array -->
 			<div ng-repeat="framework in frameworks" style="color: {{framework.color}};">
 			<span class="col-md-5 language">{{framework.skill}}</span> 
 				<div class="col-md-7 language">
+				<!-- begin skill score repeat, end of line comment fixes unwanted space -->
 				<i class="fa fa-circle" ng-repeat="i in getNumber(framework.score) track by $index"></i><!--
 				--><i class="fa fa-circle" ng-repeat="i in getNumber(8 - framework.score) track by $index" style="color: #86837E;"></i>
 				</div>
 			</div>
 		</div>
 		<div class="subSkill col-md-6">
-			<span class="col-md-12 col-xs-12 subSkill">Other Techniques/Skills</span>				
+			<span class="col-md-12 col-xs-12 subSkill">Other Techniques/Skills</span>	
+			<!-- begin repeat on other techniques -->
 			<div ng-repeat="other in others" style="color: {{other.color}};">
 			<span class="col-md-12 language">{{other.skill}}</span> 
 			</div>
 		</div>
 	</div>
 </div>
+<!-- experience panel -->
 <div class="jumbotron experiencePanel container-fluid">
 	Experience
+	<!-- neotill experience -->
 	<div class="row experience">
 			<div class="col-md-2 col-xs-6">
 				<img src="media/neotill_transparent.png" alt="" width="80%">
@@ -52,6 +62,7 @@
 				Neotill is a mobile payment processing app for iOS and Android devices. I have been an intern at Neotill since early 2016 helping with various features of the app. I have developed skills which allow me to build database driven websites and cross platform, responsive web applications. 
 			</div>
 	</div>
+	<!-- qut experience -->
 	<div class="row experience">
 		<div class="col-md-2 col-xs-6">
 			<img src="media/qut.png" alt="QUT" width="80%">

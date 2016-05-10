@@ -3,11 +3,9 @@
 <head>
 	<title>Welcome to ParseCode</title>
 	<meta name="viewport" content="width=768">
+
+	<!-- font link -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -17,35 +15,43 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
+	<!-- my own links -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="media/favicon.ico" type="image/x-icon">
 
 	<!-- Fontawesome CDN -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
 	<!-- Angular CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+
+    <!-- my JS -->
 	<script src="app.js"></script>
 </head>
-<body id="bootstrap-overrides" ng-controller="homeController"  ng-click="shootBalls()">
+<body id="bootstrap-overrides" ng-controller="homeController">
+	<!-- nav bar -->
 	<div class="jumbotron nav-bar container-fluid">
 			<ul class="nav nav-pills row">
- 				<li><a data-toggle="active" href="#me"><i class="fa fa-user" aria-hidden="true"></i> ME</a></li>
+ 				<li><a href="#me"><i class="fa fa-user" aria-hidden="true"></i> ME</a></li>
 				<li><a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"></i> PROJECTS</a></li>
-				<li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i> CONTACT</a></li>
+				<li><a href="#contact"><i class="fa fa-paper-plane" aria-hidden="true"></i> CONTACT</a></li>
 			</ul>
 	</div>
 	<div id="main">
+	<!-- inject views here -->
 		<div ng-view ng-controller="homeController"></div>
 	</div>
+	<!-- footer -->
 	<div class="jumbotron footer container-fluid">
-	<div class="row">
-		<div class="col-md-3 col-xs-3"></div>
-		<div class="col-md-6 col-xs-6 myName">Christopher Martin 2016</div>
-		<div class="col-md-3 col-xs-3">
-			<a href="https://github.com/wangchonghoe" target=_blank><i class="fa fa-github" aria-hidden="true"></i></a>
+		<div class="row">
+			<div class="col-md-3 col-xs-3"></div>
+			<div class="col-md-6 col-xs-6 myName">Christopher Martin 2016</div>
+			<div class="col-md-3 col-xs-3">
+				<a href="https://github.com/wangchonghoe" target=_blank><i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>

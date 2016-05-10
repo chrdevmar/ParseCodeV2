@@ -5,9 +5,9 @@ var parseCode = angular.module('parseCode', ['ngRoute']);
 parseCode.config(function($routeProvider) {
 
 		//home
-		$routeProvider.when('/home', {
-		templateUrl : 'views/home.html',
-		controller  : 'homeController'
+		$routeProvider.when('/contact', {
+		templateUrl : 'views/contact.html',
+		controller  : 'contactController'
 		});
 
 		//me
@@ -22,6 +22,12 @@ parseCode.config(function($routeProvider) {
 		controller  : 'projectController'
 		});
 
+		//thanks
+		$routeProvider.when('/thanks', {
+		templateUrl : 'views/thanks.html',
+		controller  : 'homeController'
+		});
+
 		$routeProvider.otherwise({
         redirectTo: '/me'
       });
@@ -29,32 +35,6 @@ parseCode.config(function($routeProvider) {
 
 //home controller
 parseCode.controller('homeController', ['$scope', function($scope){
-	$scope.message = 'this is the home view';
-	var birdX = 0;
-
-
-	// $scope.shootBalls = function(){
-		
-	// 	var time = Math.floor(Math.random() * 6) + 4;
-	// 	var drawbirdAnimation = setInterval(drawBirdWhen, time * 1000)
-	// }
-
-	// function drawBird(){
-	// 	var canvas = document.getElementById("bg");
-	// 	var context = canvas.getContext("2d");
-	// 	context.fillStyle = "FF0000";
-	// 	context.fillRect(birdX, 20, 5, 5);
-	// 	oldBirdX = birdX - 5;
-	// 	birdX++;
-	// 	if(birdX > window.innerWidth){
-	// 		clearInterval(birdAnimation);
-	// 	}
-	// 	context.clearRect(oldBirdX, 20, 5, 5);
-	// }
-
-	// function drawBirdWhen(){
-	// 	var birdAnimation = setInterval(drawBird,30)
-	// }
 
 }]);
 
